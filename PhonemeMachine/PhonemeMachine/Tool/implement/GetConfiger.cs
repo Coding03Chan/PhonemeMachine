@@ -30,7 +30,9 @@ namespace PhonemeMachine.Tool.implement
             //检查音频文件夹是否存在
             if (!File.Exists(path))
             {
-                throw new FileNotFoundException(GetConfigerMessage.AudioFilePathNotFound.ToString());
+                return GetConfigerMessage.AudioFilePathNotFound.ToString();
+                //throw new FileNotFoundException(GetConfigerMessage.AudioFilePathNotFound.ToString());
+                //TODO:优化返回内容，尽量不要用字符串去一个方法的返回结果…
             }
 
             return path;
@@ -50,7 +52,8 @@ namespace PhonemeMachine.Tool.implement
             //检查键值配置文件是否存在
             if (!File.Exists(path))
             {
-                throw new FileNotFoundException(GetConfigerMessage.KeyboardConfigFileNotFound.ToString());
+                return GetConfigerMessage.KeyboardConfigFileNotFound.ToString();
+                //throw new FileNotFoundException(GetConfigerMessage.KeyboardConfigFileNotFound..ToString());
             }
 
             return path;
