@@ -63,6 +63,16 @@ namespace PhonemeMachine.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap BackIndexButton {
+            get {
+                object obj = ResourceManager.GetObject("BackIndexButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap IndexBanner {
             get {
                 object obj = ResourceManager.GetObject("IndexBanner", resourceCulture);
@@ -86,6 +96,16 @@ namespace PhonemeMachine.Properties {
         internal static System.Drawing.Bitmap KeyboadLongKey {
             get {
                 object obj = ResourceManager.GetObject("KeyboadLongKey", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap StartButton {
+            get {
+                object obj = ResourceManager.GetObject("StartButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

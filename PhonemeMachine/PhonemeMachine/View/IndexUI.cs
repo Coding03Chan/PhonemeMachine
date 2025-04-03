@@ -61,13 +61,20 @@ namespace PhonemeMachine
 
             //获取键值文件路径
             string keyboardConfigerPath = getConfiger.GetKeyboardConfigPath(schemeName);
+            if (keyboardConfigerPath.Equals(GetConfigerMessage.KeyboardConfigFileNotFound.ToString()))
+            {
+                MessageBox.Show("当前语言方案未实装");
+            }
+            else 
+            {
+                //获取键值字典
+                Dictionary<int, string> keyboardDic = getConfiger.GetKeyboardDic(keyboardConfigerPath);
 
-            //获取键值字典
-            Dictionary<int, string> keyboardDic = getConfiger.GetKeyboardDic(keyboardConfigerPath);
-
-            //构建音素机UI
-            MachineUI machineUI = new MachineUI(schemeName, keyboardDic);
-            machineUI.Show();
+                //构建音素机UI
+                MachineUI machineUI = new MachineUI(schemeName, keyboardDic, this);
+                machineUI.Show();
+                this.Hide();
+            }
         }
 
         /// <summary>

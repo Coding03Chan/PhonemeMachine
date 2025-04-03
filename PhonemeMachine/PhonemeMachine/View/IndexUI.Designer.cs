@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IndexUI));
             this.IndexUIFrame = new System.Windows.Forms.TableLayoutPanel();
             this.ComboBox_LanguageSelect = new System.Windows.Forms.ComboBox();
             this.PictureBox_IndexBanner = new System.Windows.Forms.PictureBox();
@@ -77,8 +76,9 @@
             // Button_Start
             // 
             this.Button_Start.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.Button_Start.BackgroundImage = global::PhonemeMachine.Properties.Resources.StartButton;
+            this.Button_Start.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Button_Start.ForeColor = System.Drawing.SystemColors.Info;
-            this.Button_Start.Image = ((System.Drawing.Image)(resources.GetObject("Button_Start.Image")));
             this.Button_Start.Location = new System.Drawing.Point(3, 536);
             this.Button_Start.Name = "Button_Start";
             this.Button_Start.Size = new System.Drawing.Size(291, 100);
